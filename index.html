@@ -7,33 +7,38 @@
     <title>Select Drill Elements</title>
 </head>
 <body>
-    <form>
-    <h1>Select the items you would like to be drilled on</h1>
-    <input type="radio" name="group" id="parries" class="group" value="parries"> <label for="parries">Parries</label>
-    <br>
-    <br>
-    <input type="radio" name="group" id="footwork" class="group" value="footwork"> <label for="footwork">Footwork</label>
-    <br>
-    <br>
-</form>
-    <!-- <form> -->
-        <!-- <input type="checkbox" id="prima" name="prima"><label for="prima">Prima</label>
+    <div name="main" style="display: flex;flex-direction: column;">
+
+        <form>
+        <h1>Select the items you would like to be drilled on</h1>
+        <input type="radio" name="group" id="parries" class="group" value="parries"> <label for="parries">Parries</label>
         <br>
-        <input type="checkbox" id="seconda" name="seconda"><label for="seconda">Seconda</label>
         <br>
-        <input type="checkbox" id="terza" name="terza"><label for="terza">Terza</label>
+        <input type="radio" name="group" id="footwork" class="group" value="footwork"> <label for="footwork">Footwork</label>
         <br>
-        <input type="checkbox" id="quarta" name="quarta"><label for="quarta">Quarta</label>
         <br>
-        <input type="checkbox" id="quinta" name="quinta"><label for="quinta">Quinta</label>
-        <br>
-        <input type="checkbox" id="sesta" name="sesta"><label for="sesta">Sesta</label>
-        <br>
-        <input type="checkbox" id="septima" name="septima"><label for="septima">Septima</label>
-        <br> -->
-    <!-- </form> -->
-    <button id="shuffle">Shuffle</button>
-    <button id="replay">Replay</button>
+    </form>
+        <!-- <form> -->
+            <!-- <input type="checkbox" id="prima" name="prima"><label for="prima">Prima</label>
+            <br>
+            <input type="checkbox" id="seconda" name="seconda"><label for="seconda">Seconda</label>
+            <br>
+            <input type="checkbox" id="terza" name="terza"><label for="terza">Terza</label>
+            <br>
+            <input type="checkbox" id="quarta" name="quarta"><label for="quarta">Quarta</label>
+            <br>
+            <input type="checkbox" id="quinta" name="quinta"><label for="quinta">Quinta</label>
+            <br>
+            <input type="checkbox" id="sesta" name="sesta"><label for="sesta">Sesta</label>
+            <br>
+            <input type="checkbox" id="septima" name="septima"><label for="septima">Septima</label>
+            <br> -->
+        <!-- </form> -->
+        <div style="display: flex;flex-direction: row;">
+            <button id="shuffle" style="width: 70px;">Shuffle</button>
+            <button id="replay" style="width: 70px;">Replay</button>
+        </div>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
