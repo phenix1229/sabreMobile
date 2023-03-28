@@ -59,5 +59,7 @@ const playList = (arr) => {
 }
 
 
-document.querySelector('#shuffle').addEventListener("click", function() {buildList();index = 0;playList(itemList)});
-document.querySelector('#replay').addEventListener("click", function() {index = 0;queue()});
+document.querySelector('#shuffle').addEventListener("click", function(event) {event.preventDefault();buildList();index = 0;playList(itemList)});
+document.querySelector('#shuffle').addEventListener("touchstart", function(event) {event.preventDefault();buildList();index = 0;playList(itemList)});
+document.querySelector('#replay').addEventListener("click", function(event) {event.preventDefault();index = 0;queue()});
+document.querySelector('#replay').addEventListener("touchstart", function(event) {event.preventDefault();index = 0;queue()});
