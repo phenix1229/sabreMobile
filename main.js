@@ -50,7 +50,7 @@ const playList = (arr) => {
     randomize(arr);
     queue();
 }
-document.getElementById('#shuffle').addEventListener("click", function(event) {event.preventDefault();buildList();index = 0;playList(itemList)});
-document.getElementById('#shuffle').addEventListener("touchstart", function(event) {event.preventDefault();buildList();index = 0;playList(itemList)});
-document.getElementById('#replay').addEventListener("click", function(event) {event.preventDefault();index = 0;queue()});
-document.getElementById('#replay').addEventListener("touchstart", function(event) {event.preventDefault();index = 0;queue()});
+document.getElementById('shuffle').addEventListener("click", function(event) {event.preventDefault();buildList();index = 0;playList(itemList)});
+document.getElementById('shuffle').addEventListener("touchstart", function(event) {event.preventDefault();buildList();index = 0;playList(itemList)});
+document.getElementById('replay').addEventListener("click", function(event) {event.preventDefault();index = 0;queue()});
+document.getElementById('replay').addEventListener("touchstart", function(event) {event.preventDefault();index = 0;queue()});
